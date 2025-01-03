@@ -1,0 +1,3 @@
+
+#Ignore pycache (I sometimes interact with the solutions using Python REPL)
+__pycache__/
