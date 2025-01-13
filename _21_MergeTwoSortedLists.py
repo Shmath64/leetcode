@@ -84,7 +84,7 @@ def displayList(head: Optional[ListNode]) -> None:
         return
     displayList(head.next)
 
-sol = Solution2()
+sol = Solution1() #Solution1 for recursive, Solution2 for iterative
 
 displayList(sol.mergeTwoLists(list1, list2))
 displayList(sol.mergeTwoLists(None, ListNode(0)))
