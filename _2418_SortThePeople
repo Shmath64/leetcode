@@ -1,0 +1,8 @@
+class Solution:
+    def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
+        heights_to_people = dict(zip(heights, names))
+        heights.sort(reverse=True)
+        namesInOrder = []
+        for h in heights:
+            namesInOrder.append(heights_to_people[h])
+        return namesInOrder
